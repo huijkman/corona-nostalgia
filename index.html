@@ -11,7 +11,6 @@
     html,
     body {
       width: 100%;
-      height: 100%;
       padding: 0;
       margin: 0;
       background-color: #222;
@@ -28,23 +27,59 @@
       font-family: "Pacifico", cursive;
     }
     header {
-      width: 100vw;
-      height: 100vh;
-      background: #222 url(img/corona-nostalgia.jpg) 100% 50% no-repeat;
-      background-size: cover;
       display: flex;
       align-items: center;
       justify-content: center;
       color: #fff;
     }
     header h1 {
-      font-size: 10vw;
+      font-size: 10vh;
+      white-space: nowrap;
       color: white;
       text-shadow: -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222,
         1px 1px 0 #222;
     }
+    main {
+      color: white;
+      width: 80vw;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    main img {
+      max-width: 100%;
+      height: auto;
+    }
+    main p {
+      position: relative;
+      font-family: "Pacifico", cursive;
+      font-size: 3rem;
+      margin: 10vh auto;
+      padding-left: 20px;
+    }
+    @media only screen and (max-width: 740px) {
+      header h1 {
+        font-size: 5vh;
+      }
+      main {
+        width: 90vw;
+      }
+      main p {
+        font-size: 1.3rem;
+      }
+    }
   </style>
   <body>
+    <main>
+      <p>
+        Ik ben niet bang voor Corona<br />
+        Ik ben niet bang dat er iets verandert<br />
+        Ik ben bang dat alles bij hetzelfde blijft
+      </p>
+      <img src="img/rijks.png" alt="het rijksmuseum met lege straten" />
+    </main>
     <header>
       <h1>Corona Nostalgia</h1>
     </header>
